@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Puissance 4 !</title>
+        <link href="../css/puissance4.css" rel="stylesheet">
+        <script src="puissance4.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+
+    <a href="page_principale.html"><input type="button" id="retourPA" value="Retour vers la page d'accueil"> </input> </a>
+    
+    <p id="txtPuissance"> Pui<a id="Sp">s</a><a id="Sd">s</a>ance 4 </p>
+
+    <div id="game">
+        Veuillez activer javascript pour jouer.
+    </div>
+
+    <div class="j1">
+        <p id="couleurJ1"> Joueur 01</p>
+        <p id="couleurNomJ1"> {{nom.joueur1}}</p>
+        <p id="couleurS1"> Score du joueur</p>
+        <input type="text" id="couleurSS1" value="{{score.joueur1}}" disabled></input>
+    </div>
+    <div class="j2">
+        <p id="couleurJ2"> Joueur 02</p>
+        <p id="couleurNomJ2"> {{nom.joueur2}}</p>
+        <p id="couleurS2"> Score du joueur</p>
+        <input type="text" id="couleurSS2" value="{{score.joueur2}}" disabled></input>
+    </div>
+<br>
+    </body>
+</html>
