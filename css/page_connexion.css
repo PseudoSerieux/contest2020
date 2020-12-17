@@ -1,0 +1,74 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+</style>
+
+body{
+    width: 1920px;
+    height: 1080px;
+}
+.Titre{
+    font-family: 'Roboto', sans-serif;
+    font-size: 200pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 0pt;
+}
+
+.S_violet{
+    color: #5036ea;
+}
+
+.S_vert{
+    color: #4cd8a5;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25pt;
+    font-weight: normal;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    width: 500px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+    font-weight: normal;
+    border-radius: 23px;
+    border-style: none;
+}
+
+.BTN_valider{
+    width: 100px;
+    height: 30px;
+    background-color: #5036ea;
+    color: white;
+    font-size: 9pt;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: lighter;
+    margin-bottom: 0pt;
+}
+
+.inscription{
+    margin-left: 47.3%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #5036ea;
+    text-decoration:none;
+    margin-top: 20px;
+}
