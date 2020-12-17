@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+.Titre{
+    font-family: 'Roboto', sans-serif;
+    font-size: 180pt;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 150px;
+    margin-bottom: 0pt;
+}
+
+.S_violet{
+    color: #5036ea;
+}
+
+.S_vert{
+    color: #4cd8a5;
+}
+
+.cercle_violet {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #5036ea;
+}
+
+.cercle_vert {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #4cd8a5;
+}
+
+.LigneCercle{
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.BTN_jouer {
+    width: 360px;
+    height: 120px;
+    border-radius: 60px;
+    background-color: #5036ea;
+    text-align: center;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 30pt;
+    color: white;
+    border: 0px;
+}
+
+.BTN_jouer:hover {
+    background-color: #4cd8a5;
+    cursor:  pointer;
+}
+
+.BLOC_joueur{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    margin-left: 80%;
+    margin-top: 150px;
+    text-align: center;
+}
+
+h6{
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 20pt;
+    color: black;
+    margin-bottom: 0px;
+}
+
+.text_score{
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    font-weight: lighter;
+    margin-bottom: 0pt;
+}
+
+.score_joueur{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 25pt;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.BTN_deconnexion{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #4cd8a5;
+    text-align: center;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 12pt;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+.BTN_deconnexion:hover{
+    background-color: #5036ea;
+    cursor:  pointer;
+}
