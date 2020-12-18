@@ -46,7 +46,7 @@
         <p class="score_joueur">
             0
         </p>
-        <input type="submit" value="Déconnexion" class="BTN_deconnexion"/>
+        <a href="../index.php"><input type="submit" value="Déconnexion" class="BTN_deconnexion"/></a>
     </aside>
 
     <div class="popup_choix">
