@@ -112,3 +112,60 @@ h6{
     background-color: #5036ea;
     cursor:  pointer;
 }
+
+.popup_choix{
+    width: 340px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    margin-top: -8%;
+    margin-left: 40.95%;
+    padding-left: 20px;
+    display: none;
+
+}
+
+.BTN_1joueur{
+    width: 320px;
+    height: 80px;
+    background-color: #5036ea;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 30pt;
+    border: 0px;
+    border-radius: 60px;
+    color: white;
+}
+
+.BTN_2joueur{
+    margin-top: 20px;
+    width: 320px;
+    height: 80px;
+    background-color: #5036ea;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    font-size: 30pt;
+    border: 0px;
+    border-radius: 60px;
+    color: white;
+}
+
+.BTN_2joueur:hover{
+    background-color: #4cd8a5;
+    cursor:  pointer;
+}
+
+.BTN_1joueur:hover{
+    background-color: #4cd8a5;
+    cursor:  pointer;
+}
+
+.BTN_fermer{
+    cursor:  pointer;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    color: #5036ea;
+    text-align: center;
+    margin-left: 145px;
+    background-color: none;
+    border: none;
+}

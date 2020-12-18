@@ -23,7 +23,7 @@
         <div class="cercle_violet">
         </div>
 
-        <input type="submit" value="Jouer" class="BTN_jouer"/>
+        <button type="submit" class="BTN_jouer" onclick="popup()">Jouer</button>
 
         <div class="cercle_vert">
         </div>
@@ -48,6 +48,16 @@
         </p>
         <input type="submit" value="Déconnexion" class="BTN_deconnexion"/>
     </aside>
+
+    <div class="popup_choix">
+        <input type="submit" value="1 Joueur" class="BTN_1joueur"/>
+        <br/>
+        <input type="submit" value="2 Joueurs" class="BTN_2joueur"/>
+        <br/>
+        <input type="submit" value="&#10006;" class="BTN_fermer" onclick="popupferme()"/>
+    </div>
+
+    <script src="page_principale.js" type="text/javascript"></script>
 </body>
 
 
