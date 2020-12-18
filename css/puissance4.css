@@ -10,19 +10,21 @@
 /*Bouton retour page d'accueil*/
 #retourPA{
     position: relative;
-    background-color: black;
+    background-color:var(--violet);
     padding: 1% 1%;
     border-radius: 12px;
     font-size: 90%;
     text-transform: capitalize;
     color:white;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    border: 0px;
 }
 
 /*titre*/
 #txtPuissance{
     font-family: 'Roboto', sans-serif;
     position: relative;
-    margin-top: -4%;
+    margin-top: -2%;
     font-size: 100pt;
     font-weight: bold;
     text-align: center;
@@ -37,8 +39,8 @@
 /*jeu en lui-même*/
 #game table {
     position: absolute;
-    margin-left: 20%;
-    margin-top: -9%;
+    margin-left: 25%;
+    margin-top: -5%;
     border-spacing: 25px 10px;
 }
 #game td {
@@ -54,46 +56,54 @@
 #game td.player1 {
     background-color: var(--violet);
 }
-/* #game td:hover {
+#game td.player1:hover {
     background-color: var(--violet);
-} */
+}
 #game td.player2 {
     background-color: var(--vert);
 }
-/* #game td:hover {
+#game td.player2:hover {
     background-color: var(--vert);
-} */
+}
 
 /*Carac Joueur 1*/
 .j1{
     position:relative;
     margin-left: 5%;
     margin-top: 10%;
-    z-index: -1;
+    width: 300px;
+    text-align: center;
 }
 #couleurJ1{
     color:var(--violet);
     font-size: 30pt;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
 }
 #couleurNomJ1{
     margin-top: -2%;
-    margin-left: -3%;
     color:black;
     font-size: 25pt;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
 }
 #couleurS1{
     color:var(--violet);
     font-size: 15pt;
+    font-family: 'Roboto', sans-serif;
 }
 #couleurSS1{
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-left: -2.5%;
     border-style: solid;
     background-color: var(--violet);
     color:white;
-    padding: 1.5% 0%;
+    padding: 10% 1%;
     border-radius: 30px;
     border-color: var(--violet);
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    width: 200px;
+    height: 10px;
 }
 #couleurSS1[value]{
     text-align: center;
@@ -103,33 +113,39 @@
 /*Carac Joueur 2*/
 .j2{
     position: relative;
-    margin-left: 85%;
-    margin-top: -18%;
-    z-index: -2;
+    margin-left: 78%;
+    margin-top: -16.7%;
+    width: 300px;
+    text-align: center;
 }
 #couleurJ2{
     color:var(--vert);
     font-size: 30pt;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
 }
 #couleurNomJ2{
-    margin-top: -13%;
-    margin-left: -15%;
     color:black;
     font-size: 25pt;
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
 }
 #couleurS2{
     color:var(--vert);
     font-size: 15pt;
+    font-family: 'Roboto', sans-serif;
 }
 #couleurSS2{
     position: relative;
-    margin-left: -12%;
+    margin-left: auto;
+    margin-right: auto;
     border-style: solid;
     background-color: var(--vert);
     color:white;
     padding: 10% 1%;
     border-radius: 30px;
     border-color: var(--vert);
+    font-family: 'VCR OSD Mono','Roboto', sans-serif;
+    width: 200px;
+    height: 10px;
 }
 #couleurSS2[value]{
     text-align: center;
