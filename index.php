@@ -72,6 +72,12 @@ if (!empty($_POST['submit'])) {
                     <button type="submit" value="1" class="BTN_valider"> Se connecter </button>
                 </label>
             </p>
+
+            <p>
+                <label>
+                    <a href="./pages/page_principale.php"> <input type="button" value="Accéder directement à la page principale "> </input> </a>
+                </label>
+            </p>
         </form>
     </div>
     <div class="questioncompte">

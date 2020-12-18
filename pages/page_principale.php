@@ -50,9 +50,9 @@
     </aside>
 
     <div class="popup_choix">
-        <input type="submit" value="1 Joueur" class="BTN_1joueur"/>
+        <a href="puissance4_IA.html"><input type="submit" value="1 Joueur" class="BTN_1joueur"/></a>
         <br/>
-        <input type="submit" value="2 Joueurs" class="BTN_2joueur"/>
+        <a href="puissance4.html"><input type="submit" value="2 Joueurs" class="BTN_2joueur"/></a>
         <br/>
         <input type="submit" value="&#10006;" class="BTN_fermer" onclick="popupferme()"/>
     </div>
