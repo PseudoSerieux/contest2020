@@ -56,15 +56,15 @@
 #game td.player1 {
     background-color: var(--violet);
 }
-#game td.player1:hover {
+/* #game td.player1:hover {
     background-color: var(--violet);
-}
+} */
 #game td.player2 {
     background-color: var(--vert);
 }
-#game td.player2:hover {
+/* #game td.player2:hover {
     background-color: var(--vert);
-}
+} */
 
 /*Carac Joueur 1*/
 .j1{
@@ -73,6 +73,7 @@
     margin-top: 10%;
     width: 300px;
     text-align: center;
+    z-index: -1;
 }
 #couleurJ1{
     color:var(--violet);
@@ -117,6 +118,7 @@
     margin-top: -16.7%;
     width: 300px;
     text-align: center;
+    z-index: -2;
 }
 #couleurJ2{
     color:var(--vert);
