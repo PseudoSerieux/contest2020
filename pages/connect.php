@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$bdd = new PDO('mysql:host=localhost; dbname=puissance4', 'root', '',);
+$bdd = new PDO('mysql:host=localhost; dbname=puissance4', 'root', '');
 
 function printBeautify($text)
 {
