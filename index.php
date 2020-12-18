@@ -1,3 +1,43 @@
+<?php
+require_once('./pages/connect.php');
+
+$message_erreur = array();
+
+if (!empty($_POST['submit'])) {
+
+    $nom = $_POST['nom'];
+    //  Récupération de l'utilisateur et de son pass hashé
+    $req = $bdd->prepare('SELECT id, mdp FROM membres WHERE nom = :nom');
+    $req->execute(
+        array(':nom' => $nom)
+    );
+    $resultat = $req->fetch();
+
+    if (!$resultat) {
+        $message_erreur[] = 'Mauvais identifiant ou mot de passe !';
+    } else {
+
+        // Comparaison du mdp envoyé via le formulaire avec la base
+        $is_password_correct = password_verify($_POST['mdp'], $resultat['mdp']);
+
+        if ($is_password_correct) {
+            $_SESSION['id'] = $resultat['id'];
+            $_SESSION['nom'] = $nom;
+
+            unset($_COOKIE['nom']);
+            setcookie('nom', null, time() - 1);
+            unset($_COOKIE['mdp']);
+            setcookie('mdp', null, time() - 1);
+
+            header('Location: ./pages/page_principale.html');
+
+        } else {
+            $message_erreur[] = 'Mauvais identifiant ou mot de passe !';
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,17 +59,17 @@
         <form>
             <p>
                 <label>
-                    <input type="text" placeholder="Nom" name="Nom"/>
+                    <input type="text" placeholder="Nom" name="nom"/>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="password" placeholder="MDP" name="MotDePasse"/>
+                    <input type="password" placeholder="MDP" name="mdp" autocomplete="on"/>
                 </label>
             </p>
             <p>
                 <label>
-                    <input type="submit" value="Valider" class="BTN_valider"/>
+                    <button type="submit" value="1" class="BTN_valider"> Se connecter </button>
                 </label>
             </p>
         </form>
@@ -38,7 +78,7 @@
         <h5>
             Pas de compte ?
         </h5>
-        <a href="pages/page_inscription.php" class="inscription">
+        <a href="./pages/page_inscription.php" class="inscription">
             > Inscription <
         </a>
     </div>
